@@ -2,6 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 		<title>Форма обратной связи сайта Sedona</title>			
 	</head>
 	<body>
@@ -12,7 +13,7 @@
 			<nav class="main-navigation">
 				<button class="main-navigation__toggle" type="button">Меню</button>
 				<ul class="main-navigation__list site-list">
-					<li class="site-list__item--close">
+					<li class="site-list__item site-list__item--close">
 						<a href="index.html">Главная</a>
 					</li>
 					<li class="site-list__item">
@@ -45,21 +46,21 @@
 						</li>
 						<li class="full-name__last-name">
 							<label class="full-name__label" for="last-name">Фамилия*:</label>
-							<input class="full-name__input" id="last-name" aria-label="Имя">
+							<input class="full-name__input" id="last-name" aria-label="Фамилия">
 						</li>
 						<li class="full-name__pat-name">
 							<label class="full-name__label" for="pat-name">Отчество:</label>
-							<input class="full-name__input" id="pat-name" aria-label="Имя">
+							<input class="full-name__input" id="pat-name" aria-label="Отчество">
 						</li>
 					</ul>
 					<div class="page-form__contacts">
 						<h2 class="contacts__title">Контактная информация</h2>
 						<ul class="contacts__list contat-form">
-							<li class="contact__item contact__item--phone">
+							<li class="contat-form__item contat-form__item--phone">
 								<label class="contat-form__label" for="phone">Контактный телефон*::</label>
 								<input class="contat-form__input" id="phone" placeholder="Введите телефон" aria-label="Номер телефона">
 							</li>
-							<li class="contact__item contact__item--mail">
+							<li class="contat-form__item contat-form__item--mail">
 								<label class="contat-form__label" for="mail">Электронная почта*:</label>
 								<input class="contat-form__input" id="mail" placeholder="Введите e-mail" aria-label="Номер телефона">
 							</li>
@@ -111,20 +112,20 @@
 					</div>
 				</div>
 				<div class="page-form__submit">
-					<button type="submit" class="submit__submit-button button">Отправить отзыв</button>
+					<button type="submit" class="page-form__button button">Отправить отзыв</button>
 				</div>
 			</form>
 		</main>
 		<footer class="footer">
 			<h1 class="footer__description">#Visitsedona</h1>
 			<ul class="social-list">
-				<li class="social__item social__item--vk">
+				<li class="social-list__item social-list__item--vk">
 					<a href="#">Вконтакте</a>
 				</li>
-				<li class="social__item social__item--facebook">
+				<li class="social-list__item social-list__item--facebook">
 					<a href="#">Facebook</a>
 				</li>
-				<li class="social__item social__item--youtube">
+				<li class="social-list__item social-list__item--youtube">
 					<a href="#">Youtube</a>
 				</li>
 			</ul>
