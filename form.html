@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<title>Форма обратной связи сайта Sedona</title>			
+	</head>
+	<body>
+		<header class="main-header">
+			<a class="main-header__logo" href="#">
+				<img class="main-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Логотип сайта Sedona">
+			</a>
+			<nav class="main-navigation">
+				<ul class="main-navigation__list site-list">
+					<li class="site-list__item site-list__item--close">
+						<a href="index.html">Главная</a>
+					</li>
+					<li class="site-list__item">
+						<a href="photo.html">Фото и видео</a>
+					</li>
+					<li class="site-list__item">
+						<a href="form.html">Форма отзыва</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#">HTML Academy</a>
+					</li>
+				</ul>
+				<button class="main-navigation__toggle" type="button">Меню</button>
+			</nav>
+		</header>
+		<div class="main-banner main-banner--smile">
+			<img class="main-header__banner-image" src="http://placehold.it/150x100" width="" height="" alt="Баннер страницы с формой">
+		</div>
+		<main class="page-main">
+			<div class="give-feedback">
+				<h2 class="give-feedback__title">Оставьте свой отзыв</h2>
+				<p class="give-feedback_-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+			</div>
+			<form class="page-form" method="post" action="https://echo.htmlacademy.ru">
+				<div class="page-form__wrapper">
+					<ul class="page-form__full-name full-name">
+						<li class="full-name__first-name">
+							<label class="full-name__label" for="first-name">Имя*:</label>
+							<input class="full-name__input" id="first-name" aria-label="Имя">
+						</li>
+						<li class="full-name__last-name">
+							<label class="full-name__label" for="last-name">Фамилия*:</label>
+							<input class="full-name__input" id="last-name" aria-label="Фамилия">
+						</li>
+						<li class="full-name__pat-name">
+							<label class="full-name__label" for="pat-name">Отчество:</label>
+							<input class="full-name__input" id="pat-name" aria-label="Отчество">
+						</li>
+					</ul>
+					<div class="page-form__contacts">
+						<h2 class="contacts__title">Контактная информация</h2>
+						<ul class="contacts__list contat-form">
+							<li class="contat-form__item contat-form__item--phone">
+								<label class="contat-form__label" for="phone">Контактный телефон*::</label>
+								<input class="contat-form__input" id="phone" placeholder="Введите телефон" aria-label="Номер телефона">
+							</li>
+							<li class="contat-form__item contat-form__item--mail">
+								<label class="contat-form__label" for="mail">Электронная почта*:</label>
+								<input class="contat-form__input" id="mail" placeholder="Введите e-mail" aria-label="Номер телефона">
+							</li>
+						</ul>
+					</div>
+					<div class="page-form__radiobuttons">
+						<legend class="page-form__radio-title">Ваше общее впечатление:</legend>
+						<fieldset>
+							<ul class="page-form__radio radio-list">
+								<li class="radio-list__item">
+									<input class="radio-list__input" type="radio" name="rb" id="rb1">
+									<label class="radio-list__label" for="rb1">Скорее положительное</label>
+								</li>
+								<li class="radio-list__item">
+									<input class="radio-list__input" type="radio" name="rb" id="rb2">
+									<label class="radio-list__label" for="rb2">Скорее отрицательное</label>
+								</li>
+								<li class="radio-list__item">
+									<input class="radio-list__input" type="radio" name="rb" id="rb3">
+									<label class="radio-list__label" for="rb3">Затрудняюсь ответить</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+					<div class="page-form__checkboxes">
+						<legend class="page-form__check-title">Посещенные достопримечательности</legend>
+						<ul class="page-form__check check-list">
+							<li class="check-list__item">
+								<input class="check-list__input" type="checkbox" id="cb1">
+								<label class="check-list__label" for="cb1">Мост дьявола</label>
+							</li>
+							<li class="check-list__item">
+								<input class="check-list__input" type="checkbox" id="cb2">
+								<label class="check-list__label" for="cb2">Гора-Колокол</label>
+							</li>
+							<li class="check-list__item">
+								<input class="check-list__input" type="checkbox" id="cb3">
+								<label class="check-list__label" for="cb3">Слайд-парк</label>
+							</li>
+							<li class="check-list__item">
+								<input class="check-list__input" type="checkbox" id="cb4">
+								<label class="check-list__label" for="cb4">Красные скалы</label>
+							</li>
+						</ul>
+					</div>
+					<div class="page-form__emotions">
+						<textarea class="emotions__textarea" id="emotion" aria-label="Напишите что-нибудь"></textarea>
+						<label for="emotion">Опишите подробно все свои восторги</label>
+					</div>
+				</div>
+				<div class="page-form__submit">
+					<button type="submit" class="page-form__button button">Отправить отзыв</button>
+				</div>
+			</form>
+		</main>
+		<footer class="footer">
+			<h1 class="footer__description">#Visitsedona</h1>
+			<ul class="social-list">
+				<li class="social-list__item social-list__item--vk">
+					<a href="#">Вконтакте</a>
+				</li>
+				<li class="social-list__item social-list__item--facebook">
+					<a href="#">Facebook</a>
+				</li>
+				<li class="social-list__item social-list__item--youtube">
+					<a href="#">Youtube</a>
+				</li>
+			</ul>
+			<div class="dev">
+				<a class="dev__ref" href="#">Разработано</a>
+			</div>
+		</footer>
+	</body>
+</html>

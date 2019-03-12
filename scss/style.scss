@@ -1,0 +1,32 @@
+@import "header.scss";
+@import "banner.scss";
+@import "causes.scss";
+@import "variables.scss";
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: auto;
+  text-align: center;
+}
+
+.row-wrapper {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

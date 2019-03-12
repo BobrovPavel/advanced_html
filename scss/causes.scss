@@ -1,0 +1,57 @@
+@import "variables.scss";
+
+.causes__list {
+    list-style: none;
+}
+
+.extended__list {
+    list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+
+    .advantage-text {
+        display: flex;
+        flex-direction: column;
+        min-width: 256px;
+        padding: 50px 0;
+    }
+
+    .advantage-description {
+        display: flex;
+        width: 100%;
+    }
+
+    .cause-image {
+        width: 100%;
+    }
+
+    .extended {
+        display: flex;
+    }
+
+    .extended__item {
+        min-width: 256px;
+        padding: 50px 0;
+    }
+
+    .advantages-list__wrapper {
+        display: flex;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .social-list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    
+}
