@@ -1,11 +1,35 @@
 @import "header.scss";
 @import "banner.scss";
 @import "causes.scss";
+@import "interes.scss";
+@import "map.scss";
+@import "footer.scss";
 @import "variables.scss";
+@import "gallery.scss";
+@import "form.scss";
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 2em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+fieldset {
+  border: none;
 }
 
 .wrapper {
@@ -13,8 +37,11 @@ img {
   text-align: center;
 }
 
-.row-wrapper {
-  display: flex;
+.visually-hidden {
+  visibility: hidden;
+  font-size: 0;
+  width: 9;
+  height: 0;
 }
 
 @media (min-width: $tablet-width) {

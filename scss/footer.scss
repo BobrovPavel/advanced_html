@@ -1,0 +1,35 @@
+@import "variables.scss";
+
+.footer {
+    min-height: 120px;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+
+    .footer {
+        min-height: 120px;
+    }
+
+    .footer__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 35px 0;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    
+}
