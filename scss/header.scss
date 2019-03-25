@@ -7,8 +7,8 @@
     justify-content: center;
 }
 
-.main-header__tablet-logo-image,
-.main-header__desktop-logo-image {
+.main-header--tablet,
+.main-header--desktop {
     display: none;
 }
 
@@ -34,12 +34,12 @@
         justify-content: space-around;
     }
 
-    .main-header__mobile-logo-image,
-    .main-header__desktop-logo-image {
+    .main-header--mobile,
+    .main-header--desktop {
         display: none;
     }
 
-    .main-header__tablet-logo-image {
+    .main-header--tablet {
         display: block;
     }
 
@@ -55,12 +55,12 @@
 
 @media (min-width: $desktop-width) {
 
-    .main-header__mobile-logo-image,
-    .main-header__tablet-logo-image {
+    .main-header--mobile,
+    .main-header--tablet {
         display: none;
     }
 
-    .main-header__desktop-logo-image {
+    .main-header--desktop {
         display: block;
     }
 

@@ -4,15 +4,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 		<title>Форма обратной связи сайта Sedona</title>
-		<link href="css/style.css" rel='stylesheet' type='text/css'>			
+		<link href="css/style.min.css" rel='stylesheet' type='text/css'>			
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="main-header">
 				<a class="main-header__logo" href="#">
-					<img class="main-header__mobile-logo-image" src="images/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта Sedona">
-					<img class="main-header__tablet-logo-image" src="images/logo-sedona-tablet.svg" width="102" height="83" alt="Логотип сайта Sedona">
-					<img class="main-header__desktop-logo-image" src="images/logo-sedona-desktop.svg" width="188" height="96" alt="Логотип сайта Sedona">
+					<img class="main-header--mobile" src="images/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта Sedona">
+					<img class="main-header--tablet" src="images/logo-sedona-tablet.svg" width="102" height="83" alt="Логотип сайта Sedona">
+					<img class="main-header--desktop" src="images/logo-sedona-desktop.svg" width="188" height="96" alt="Логотип сайта Sedona">
 				</a>
 				<nav class="main-navigation">
 					<ul class="main-navigation__list site-list">
@@ -42,35 +42,37 @@
 			<main class="page-main">
 				<div class="give-feedback">
 					<h2 class="give-feedback__title">Оставьте свой отзыв</h2>
-					<p class="give-feedback_-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+					<p class="give-feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 				</div>
 				<form class="page-form" method="post" action="https://echo.htmlacademy.ru">
 					<div class="page-form__wrapper">
-						<ul class="page-form__item page-form__full-name full-name">
+						<div class="page-form__item page-form__full-name">
 							<h2 div class="full-name__title">Представьтесь:</h2>
-							<li class="full-name__first-name">
-								<label class="full-name__label" for="first-name">Имя*:</label>
-								<input class="full-name__input" id="first-name" aria-label="Имя">
-							</li>
-							<li class="full-name__last-name">
-								<label class="full-name__label" for="last-name">Фамилия*:</label>
-								<input class="full-name__input" id="last-name" aria-label="Фамилия">
-							</li>
-							<li class="full-name__pat-name">
-								<label class="full-name__label" for="pat-name">Отчество:</label>
-								<input class="full-name__input" id="pat-name" aria-label="Отчество">
-							</li>
-						</ul>
-						<div class="page-form__item page-form__item--full page-form__contacts">
-							<h2 class="contacts__title">Контактная информация</h2>
-							<ul class="contacts__list contat-form">
-								<li class="contat-form__item contat-form__item--phone">
-									<label class="contat-form__label" for="phone">Контактный телефон*::</label>
-									<input class="contat-form__input" id="phone" placeholder="Введите телефон" aria-label="Номер телефона">
+							<ul class="full-name__list full-name-form">
+								<li class="full-name-form__item full-name-form__item--first-name">
+									<label class="full-name-form__label" for="first-name">Имя*:</label>
+									<input class="full-name-form__input" id="first-name" aria-label="Имя">
 								</li>
-								<li class="contat-form__item contat-form__item--mail">
-									<label class="contat-form__label" for="mail">Электронная почта*:</label>
-									<input class="contat-form__input" id="mail" placeholder="Введите e-mail" aria-label="Номер телефона">
+								<li class="full-name-form__item full-name-form__item--last-name">
+									<label class="full-name-form__label" for="last-name">Фамилия*:</label>
+									<input class="full-name-form__input" id="last-name" aria-label="Фамилия">
+								</li>
+								<li class="full-name-form__item full-name-form__item--pat-name">
+									<label class="full-name-form__label" for="pat-name">Отчество:</label>
+									<input class="full-name-form__input" id="pat-name" aria-label="Отчество">
+								</li>
+							</ul>
+						</div>
+						<div class="page-form__item page-form__contacts page-form__item--full">
+							<h2 class="contacts__title">Контактная информация</h2>
+							<ul class="contacts__list contact-form">
+								<li class="contact-form__item contact-form__item--phone">
+									<label class="contact-form__label" for="phone">Контактный телефон*::</label>
+									<input class="contact-form__input" id="phone" placeholder="Введите телефон" aria-label="Номер телефона">
+								</li>
+								<li class="contact-form__item contact-form__item--mail">
+									<label class="contact-form__label" for="mail">Электронная почта*:</label>
+									<input class="contact-form__input" id="mail" placeholder="Введите e-mail" aria-label="Номер телефона">
 								</li>
 							</ul>
 						</div>
