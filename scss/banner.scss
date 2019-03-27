@@ -10,22 +10,22 @@
     margin: auto;
 }
 
-.tablet-banner-image,
-.desktop-banner-image {
+.main-banner__text--tablet,
+.main-banner__text--desktop {
     display: none;
 }
 
-.mobile-banner-image {
+.main-banner__text--mobile {
     display: block;
 }
 
 @media (min-width: $tablet-width) {
-    .mobile-banner-image,
-    .desktop-banner-image {
+    .main-banner__text--mobile,
+    .main-banner__text--desktop {
         display: none;
     }
 
-    .tablet-banner-image {
+    .main-banner__text--tablet {
         display: block;
     }
 
@@ -41,12 +41,12 @@
 }
 
 @media (min-width: $desktop-width) {
-    .mobile-banner-image,
-    .tablet-banner-image {
+    .main-banner__text--mobile,
+    .main-banner__text--tablet {
         display: none;
     }
 
-    .desktop-banner-image {
+    .main-banner__text--desktop {
         display: block;
     }
 
