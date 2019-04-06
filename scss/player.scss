@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+.video__player {
+    width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+    .video__player {
+        width: 800px;
+        height: 500px;
+    }
+}

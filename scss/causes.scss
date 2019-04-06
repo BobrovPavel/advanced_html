@@ -1,0 +1,86 @@
+@import "variables.scss";
+
+
+.causes__list {
+    list-style: none;
+}
+.advantages-list__item--with-image {
+    background: #81b3d2;
+}
+
+.advantage__text {
+    padding: 50px;
+}
+
+.advantage__image {
+    width: 100%;
+}
+
+.extended__text {
+    text-align: left;
+    padding: 15px 60px;
+}
+
+.advantages-list__wrapper {
+    background: #ededed;
+}
+
+@media (min-width: $tablet-width) {
+
+    .causes__main-description {
+        width: 100%;
+        align-items: center;
+    }
+
+    .main-description__wrapper {
+        max-width: 460px;
+        margin: 0 auto;
+    }
+
+    .advantages-list__item--with-image {
+        display: flex;
+    }
+
+    .advantage__description--reverse {
+        order: 2;
+    }
+
+    .advantage__description {
+        min-width: 256px;
+        max-width: 256px;
+    }
+
+    .extended-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .extended-list__item {
+        text-align: center;
+    }
+
+    .extended__text {
+        text-align: center;
+        padding: 160px 45px 65px;
+    }
+
+    .advantages-list__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .extended__item {
+        min-width: 256px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .advantage__description {
+        min-width: 400px;
+        max-width: 400px;
+    }
+
+    .advantage__text {
+        padding: 70px 50px;
+    }
+}

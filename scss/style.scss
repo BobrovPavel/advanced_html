@@ -1,0 +1,63 @@
+@import "header.scss";
+@import "main-banner.scss";
+@import "causes.scss";
+@import "interest.scss";
+@import "map.scss";
+@import "footer.scss";
+@import "variables.scss";
+@import "photo-list.scss";
+@import "form.scss";
+@import "player.scss";
+@import "social.scss";
+@import "header-logo.scss";
+@import "navigations.scss";
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 2em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+fieldset {
+  border: none;
+}
+
+.wrapper {
+  max-width: auto;
+  text-align: center;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  font-size: 0;
+  width: 9;
+  height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

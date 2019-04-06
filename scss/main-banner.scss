@@ -1,0 +1,62 @@
+@import "variables.scss";
+
+.main-banner {
+    height: 389px;
+    background: gray;
+    padding-top: 98px;
+}
+
+.main-banner__text {
+    margin: auto;
+}
+
+.main-banner__text--tablet,
+.main-banner__text--desktop {
+    display: none;
+}
+
+.main-banner__text--mobile {
+    display: block;
+}
+
+@media (min-width: $tablet-width) {
+    .main-banner__text--mobile,
+    .main-banner__text--desktop {
+        display: none;
+    }
+
+    .main-banner__text--tablet {
+        display: block;
+    }
+
+    .main-banner {
+        height: 518px;
+        background: green;
+        padding-top: 78px;
+    }
+    
+    .main-banner__text {
+        margin: auto;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .main-banner__text--mobile,
+    .main-banner__text--tablet {
+        display: none;
+    }
+
+    .main-banner__text--desktop {
+        display: block;
+    }
+
+    .main-banner {
+        height: 518px;
+        background: blueviolet;
+        padding-top: 78px;
+    }
+    
+    .main-banner__text {
+        margin: auto;
+    }
+}

@@ -1,0 +1,28 @@
+@import "variables.scss";
+
+.main-navigation__toggle {
+    display: flex;
+    justify-content: flex-end;  
+}
+
+@media (min-width: $tablet-width) {
+
+    .main-navigation {
+        width: 100%;
+    }
+    
+    .main-navigation__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .main-navigation__toggle {
+        display: none; 
+    }
+
+}
+
+@media (min-width: $desktop-width) {
+
+}

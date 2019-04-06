@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<title>Форма обратной связи сайта Sedona</title>
+		<link href="css/style.min.css" rel='stylesheet' type='text/css'>			
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="main-header">
+				<a class="main-header__header-logo header-logo">
+					<img class="header-logo--mobile" src="images/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта Sedona">
+					<img class="header-logo--tablet" src="images/logo-sedona-tablet.svg" width="102" height="83" alt="Логотип сайта Sedona">
+					<img class="header-logo--desktop" src="images/logo-sedona-desktop.svg" width="188" height="96" alt="Логотип сайта Sedona">
+				</a>
+				<nav class="main-navigation">
+					<ul class="main-navigation__list site-list">
+						<li class="site-list__item site-list__item--close">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="site-list__item">
+							<a href="photo.html">Фото и видео</a>
+						</li>
+						<li class="site-list__item">
+							<a href="form.html">Форма отзыва</a>
+						</li>
+						<li class="site-list__item">
+							<a href="#">HTML Academy</a>
+						</li>
+					</ul>
+					<div class="main-navigation__toggle">
+						<button type="button">Меню</button>
+					</div>
+				</nav>
+			</header>
+			<div class="main-banner main-banner--full">
+				<img class="main-banner__text main-banner__text--mobile" src="images/text-index.mobile.png" width="282" height="214" alt="Баннер сайта Sedona">
+				<img class="main-banner__text main-banner__text--tablet" src="images/text-index-tablet.png" width="460" height="350" alt="Баннер сайта Sedona">
+				<img class="main-banner__text main-banner__text--desktop" src="images/text-index.desktop.png" width="460" height="350" alt="Баннер сайта Sedona">
+			</div>
+			<main class="page-main">
+				<div class="give-feedback">
+					<h2 class="give-feedback__title">Оставьте свой отзыв</h2>
+					<p class="give-feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+				</div>
+				<form class="page-form" method="post" action="https://echo.htmlacademy.ru">
+					<div class="page-form__wrapper">
+						<div class="page-form__item page-form__item--full-name-list full-name-list">
+							<h2 div class="full-name__title">Представьтесь:</h2>
+							<ul class="full-name-list__items">
+								<li class="full-name-list__item full-name-list__item--first-name">
+									<label class="full-name-list__label" for="first-name">Имя*:</label>
+									<input class="full-name-list__input" id="first-name" aria-label="Имя">
+								</li>
+								<li class="full-name-list__item full-name-list__item--last-name">
+									<label class="full-name-list__label" for="last-name">Фамилия*:</label>
+									<input class="full-name-list__input" id="last-name" aria-label="Фамилия">
+								</li>
+								<li class="full-name-list__item full-name-list__item--pat-name">
+									<label class="full-name-list__label" for="pat-name">Отчество:</label>
+									<input class="full-name-list__input" id="pat-name" aria-label="Отчество">
+								</li>
+							</ul>
+						</div>
+						<div class="page-form__item page-form__item--contacts-list page-form__item--full contacts-list">
+							<h2 class="contacts-list__title">Контактная информация</h2>
+							<ul class="contacts-list__items">
+								<li class="contacts-list__item contacts-list__item--phone">
+									<label class="contacts-list__label" for="phone">Контактный телефон*::</label>
+									<input class="contacts-list__input" id="phone" placeholder="Введите телефон" aria-label="Номер телефона">
+								</li>
+								<li class="contacts-list__item contacts-list__item--mail">
+									<label class="contacts-list__label" for="mail">Электронная почта*:</label>
+									<input class="contacts-list__input" id="mail" placeholder="Введите e-mail" aria-label="Номер телефона">
+								</li>
+							</ul>
+						</div>
+						<div class="page-form__item page-form__item--radio-list radio-list">
+							<legend class="radio-list__buttons-title">Ваше общее впечатление:</legend>
+							<fieldset>
+								<ul class="radio-list__items">
+									<li class="radio-list__item">
+										<input class="radio-list__input" type="radio" name="rb" id="rb1">
+										<label class="radio-list__label" for="rb1">Скорее положительное</label>
+									</li>
+									<li class="radio-list__item">
+										<input class="radio-list__input" type="radio" name="rb" id="rb2">
+										<label class="radio-list__label" for="rb2">Скорее отрицательное</label>
+									</li>
+									<li class="radio-list__item">
+										<input class="radio-list__input" type="radio" name="rb" id="rb3">
+										<label class="radio-list__label" for="rb3">Затрудняюсь ответить</label>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
+						<div class="page-form__item page-form__item--checkbox-list page-form__item--full checkbox-list">
+							<legend class="checkbox-list__title">Посещенные достопримечательности</legend>
+							<ul class="checkbox-list__items">
+								<li class="checkbox-list__item">
+									<input class="checkbox-list__input" type="checkbox" id="cb1">
+									<label class="checkbox-list__label" for="cb1">Мост дьявола</label>
+								</li>
+								<li class="checkbox-list__item">
+									<input class="checkbox-list__input" type="checkbox" id="cb2">
+									<label class="checkbox-list__label" for="cb2">Гора-Колокол</label>
+								</li>
+								<li class="checkbox-list__item">
+									<input class="checkbox-list__input" type="checkbox" id="cb3">
+									<label class="checkbox-list__label" for="cb3">Слайд-парк</label>
+								</li>
+								<li class="checkbox-list__item">
+									<input class="checkbox-list__input" type="checkbox" id="cb4">
+									<label class="checkbox-list__label" for="cb4">Красные скалы</label>
+								</li>
+							</ul>
+						</div>
+						<div class="page-form__item page-form__item--full page-form__item--emotions emotions">
+							<h2>Опишите свои эмоции:</h2>
+							<textarea class="emotions__textarea" id="emotion" aria-label="Напишите что-нибудь"></textarea>
+							<label for="emotion">Опишите подробно все свои восторги</label>
+						</div>
+					</div>
+					<div class="page-form__item--submit">
+						<button type="submit" class="page-form__button button">Отправить отзыв</button>
+						<p>* - обязательные поля</p>
+					</div>
+				</form>
+			</main>
+			<footer class="footer">
+				<div class="footer__wrapper">
+					<h1 class="footer__description">#Visitsedona</h1>
+					<ul class="social-list">
+						<li class="social-list__item social-list__item--vk">
+							<a href="#">Вконтакте</a>
+						</li>
+						<li class="social-list__item social-list__item--facebook">
+							<a href="#">Facebook</a>
+						</li>
+						<li class="social-list__item social-list__item--youtube">
+							<a href="#">Youtube</a>
+						</li>
+					</ul>
+					<div class="dev">
+						<a class="dev__ref" href="#">Разработано</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
